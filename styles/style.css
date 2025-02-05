@@ -1,19 +1,20 @@
 html {
     box-sizing: border-box;
-    font-size: 15px;
+    font-size: 62.5%;
 }
 body {
     background-color: hsl(212, 45%, 89%);
     margin: 0;
     font-family: "Outfit", serif;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 .container {
     padding: 20px;
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 .qr-code {
     max-width: 300px;
@@ -25,7 +26,7 @@ body {
 }
 
 .qr-code h1 {
-    font-size: 20px;
+    font-size: 2rem;
     color: hsl(218, 44%, 22%);
     margin: 20px;
 }
@@ -40,11 +41,4 @@ body {
     max-width: 100%;
     border-radius: 10px;
     margin: 0 auto;
-}
-/* Add a media query for mobile screens */
-@media screen and (max-width:768px) {
-    .container {
-        width: 100%;
-        margin: 30px;
-    }
 }
